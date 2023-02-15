@@ -1,3 +1,21 @@
+
+
+class doctor:
+    def __init__(self, Id, name, family, degree, workTime, hrSalary, inWorkH, outWorkH, totalSalary, totalWorkTime):
+        self.Id = Id
+        self.Name = name
+        self.Family = family
+        self.Degree = degree
+        self.WorkTime = workTime
+        self.hrSalary = hrSalary
+        self.inWorkH = inWorkH
+        self.outWorkH = outWorkH
+        self.totalSalary = totalSalary
+        self.totalWorkTime = totalWorkTime
+        
+
+list_doctors=[]
+
 def ShowOption():
     print("-------------------------------------------")
     print("--------------   Hospital    --------------")
@@ -14,6 +32,12 @@ def ShowOption():
     print("9 : Register New")
     print("10 : Register New")
 
+
+
+def Register():
+    print("Starting Register")
+    
+    
 ShowOption()
 
 while True:
