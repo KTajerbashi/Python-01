@@ -32,9 +32,9 @@ if isPrime(number) :
     number /= 10
     print(int(number))
     if isPrime(int(number)) :
-        print("Complete Prime Number")
+        print("1")
     else :
         print("Not Complete Prime Number")
 else:
-    print("Not Prime Number")
+    print("0")
     
