@@ -43,10 +43,10 @@ def get_date():
 def shamsi_to_miladi():
     date = get_date().split("/")
     print(date)
-    if int(date[1]) <= 10 and int(date[2]) <= 10:
-        return (f"Your Date is : {int(date[0])+621}")
-    else: 
+    if (int(date[1]) >= 10 and int(date[2]) > 10) or (int(date[1]>10)):
         return (f"Your Date is : {int(date[0])+622}")
+    else: 
+        return (f"Your Date is : {int(date[0])+621}")
 
 if ShowChoices() == 1:
     print(Fore.GREEN,Back.WHITE,shamsi_to_miladi())
